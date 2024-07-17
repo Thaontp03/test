@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('author',50);
             $table->string('publisher',50);
             $table->date('publication');
-            $table->double('price',8,2);
+            $table->double('price', 8, 2);
             $table->integer('quantity');
             $table->foreignId('category_id')->constrained();
             $table->timestamps();
